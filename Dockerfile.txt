@@ -1,0 +1,4 @@
+FROM python:3
+ADD tweetSentiment.py /
+RUN pip install sys, tweepy, csv, re, TextBlob, matplotlib 
+CMD [ "python", "./tweetSentiment.py" ]
